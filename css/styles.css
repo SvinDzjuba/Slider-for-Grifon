@@ -6,39 +6,47 @@ body {
 
 main {
     width: 1440px;
+    height: 400px;
+    padding: 0;
     justify-content: center;
-    margin: 0 auto;
+    margin: 250px auto;
+    border: 10px solid;
+    overflow: hidden;
+}
+
+img {
+    cursor: pointer;
 }
 
 .first-template {
     overflow: hidden;
 }
 
-.first-template img {
-    width: 1440px;
-    height: 300px;
-    position: absolute;
-    transform: translateX(-100%);
-    transition: ease all 0.8s;
-    /* transition-timing-function: cubic-bezier(.84,.17,.47,.79); */
-}
-
 .second-template {
     overflow: hidden;
 }
 
-.second-template img {
-    width: 1440px;
-    height: 300px;
-    position: absolute;
-    transition: ease all 0.8s;
+.first-template {
+    /* position: absolute; */
+    transform: translateX(-100%);
+    transition: ease all 0.4s;
     /* transition-timing-function: cubic-bezier(.84,.17,.47,.79); */
 }
 
-.second-template img.active {
-    transform: translateX(100%);
+.first-template img {
+    width: 1440px;
+    height: 404px;
 }
 
-.first-template img.active {
-    transform: translateX(0%);
+.second-template img {
+    width: 1440px;
+    height: 404px;
+}
+
+
+.second-template {
+    position: fixed;
+    top: 260px;
+    transition: ease all 0.4s;
+    /* transition-timing-function: cubic-bezier(.84,.17,.47,.79); */
 }
