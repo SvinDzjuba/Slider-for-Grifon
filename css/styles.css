@@ -1,0 +1,44 @@
+/* SLAVA UKRAINE */
+
+body {
+    overflow: hidden;
+}
+
+main {
+    width: 1440px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.first-template {
+    overflow: hidden;
+}
+
+.first-template img {
+    width: 1440px;
+    height: 300px;
+    position: absolute;
+    transform: translateX(-100%);
+    transition: ease all 0.8s;
+    /* transition-timing-function: cubic-bezier(.84,.17,.47,.79); */
+}
+
+.second-template {
+    overflow: hidden;
+}
+
+.second-template img {
+    width: 1440px;
+    height: 300px;
+    position: absolute;
+    transition: ease all 0.8s;
+    /* transition-timing-function: cubic-bezier(.84,.17,.47,.79); */
+}
+
+.second-template img.active {
+    transform: translateX(100%);
+}
+
+.first-template img.active {
+    transform: translateX(0%);
+}
